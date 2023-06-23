@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: yellowgreen;
+}
+
+.item1{
+    grid-area: Popexperience;
+}
+
+.item2{
+    grid-area: inicio;
+    background-color: #F08954;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.item3{
+    grid-area: musica;
+    background-color: #F08954;
+    border-radius: 20px;
+    margin: 5px;
+}
+.item4{
+    grid-area: manga;
+    background-color: #F08954;
+    border-radius: 20px;
+    margin: 5px;
+}
+.item5{
+    grid-area: videojuegos;
+    background-color: #F08954;
+    border-radius: 20px;
+    margin: 5px;
+}
+.item6{
+    grid-area: cine;
+    background-color: #F08954;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-areas:
+    'Popexperience Popexperience Popexperience Popexperience Popexperience Popexperience'
+    'inicio inicio musica manga videojuegos cine'
+    ;
+    background-image: url("images/fondo-cabecera.jpg");
+    text-decoration: none;
+}
+.grid-layout > div {
+    text-align: center;
+    padding: 20px 0;
+    font-family: cursive;
+    font-size: 15px;
+}
+.grid-layout > div > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* musica */
+
+.item7{
+    grid-area: titulo;
+    background-color: #F08954;
+    border-radius: 20px;
+    margin: 50px 50px;
+}
+.item8{
+    grid-area: ficha;
+    background-color: #F08954;
+    text-align: center;
+    border-radius: 20px;
+    padding: 70px;
+}
+.item9{
+    grid-area: video;
+    background-color: #F08954;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+.item10{
+    grid-area: letra;
+    background-color: #F08954;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1px;
+    overflow: scroll;
+    height: 500px;
+    font-size: smaller;
+    border-radius: 20px;
+}
+.item11{
+    grid-area: nulo;
+}
+
+.grid-layout-cuerpo{
+    display: grid;
+    grid-template-areas: 
+    'titulo titulo titulo titulo titulo titulo'
+    'ficha ficha ficha ficha ficha ficha'
+    'video video video video video video'
+    'letra letra letra letra letra letra';
+    background-image: url("images/Arctic_Monkeys_portada.jpg");
+    margin-top: 25px;
+}
+
+.grid-layout-cuerpo > div {
+    text-align: center;
+    margin-right: 500px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* manga */
+
+.mitem6-5{
+    grid-area: titulom;
+    background-color: #F08954;
+    border-radius: 20px;
+    margin: 5px;
+    text-align: center;
+}
+.mitem7{
+    grid-area: titulom2;
+    background-color: #F08954;
+    border-radius: 20px;
+}
+.mitem8{
+    grid-area: encabezado;
+    background-color: #F08954;
+    border-radius: 20px;
+    padding: 5px;
+}
+.mitem9{
+    grid-area: img1;
+    margin-right: 10px;
+}
+.mitem10{
+    grid-area: img2;
+    margin-right: 10px;
+}
+.mitem11{
+    grid-area: eva;
+    background-color: #F08954;
+    border-radius: 20px;
+}
+.mitem12{
+    grid-area: evaimg1;
+}
+.mitem13{
+    grid-area: evaevaimg2;
+}
+.mitem14{
+    grid-area: nulo;
+}
+
+.grid-layout-cuerpo-manga{
+    display: grid;
+    grid-template-areas: 
+    'titulom titulom titulom titulom titulom titulom'
+    'titulom2 titulom2 titulom2 titulom2 titulom2 titulom2'
+    'encabezado encabezado encabezado encabezado encabezado encabezado'
+    'img1 img1 img1 img2 img2 img2'
+    'eva eva eva eva eva eva'
+    'evaimg1 evaimg1 evaimg1 evaevaimg2 evaevaimg2 evaevaimg2';
+    background-image: url("images/flores-fondo.jpg");
+    margin-top: 25px;
+}
+.grid-layout-cuerpo-manga > div {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.grid-layout-cuerpo-manga > div > img{
+    margin-right: 5px;
+}
+
+/* videojuegos */
+
+.vj-item7{
+    grid-area: vjtitulo;
+    background-color: #F08954;
+    border-radius: 20px;
+    padding: 10px;
+}
+.vj-item8{
+    grid-area: vjtexto;
+    background-color: #F08954;
+    border-radius: 20px;
+    padding: 10px;
+}
+.vj-item9{
+    grid-area: vjimagen;
+}
+.vj-item10{
+    grid-area: vjvinculo;
+    background-color: #F08954;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.grid-layout-cuerpo-videojuegos{
+    display: grid;
+    grid-template-areas: 
+    'vjtitulo vjtitulo vjtitulo vjtitulo vjtitulo vjtitulo'
+    'vjtexto vjtexto vjtexto vjtexto vjtexto vjtexto'
+    'vjimagen vjimagen vjimagen vjimagen vjimagen vjimagen'
+    'vjvinculo vjvinculo vjvinculo vjvinculo vjvinculo vjvinculo';
+    background-image: url("images/fondo_videojuegos.jpg");
+    margin-top: 25px;
+}
+
+.grid-layout-cuerpo-videojuegos > div {
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.grid-layout-cuerpo-videojuegos > div > a {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* cine */
+
+.c-item7{
+    grid-area: ctitulo;
+    background-color: #F08954;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.c-item8{
+    grid-area: ctexto;
+    background-color: #F08954;
+    color: white;
+    font-family: cursive;
+    border-radius: 20px;
+    padding: 10px;
+}
+.c-item9{
+    grid-area: cvideo;
+}
+
+.grid-layout-cuerpo-cine{
+    display: grid;
+    grid-template-areas:
+    'ctitulo ctitulo ctitulo ctitulo ctitulo ctitulo'
+    'ctexto ctexto ctexto ctexto ctexto ctexto'
+    'cvideo cvideo cvideo cvideo cvideo cvideo'
+    ;
+    background-image: url("images/fondo-planeta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 25px;
+}
+
+.grid-layout-cuerpo-cine > div{
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
